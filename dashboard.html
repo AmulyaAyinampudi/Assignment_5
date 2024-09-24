@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assests/css/dash.css"> <!-- Adjust path as necessary -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Placement Screening System</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li class="right"><a href="./Login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+                <li class="right"><a href="./Register.html"><i class="fas fa-user-plus"></i>Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+        <h2>Welcome to Your Dashboard</h2>
+        <div class="stats">
+            <div class="stat-item">
+                <h3>Total Candidates</h3>
+                <p>150</p>
+            </div>
+            <div class="stat-item">
+                <h3>Interviews Scheduled</h3>
+                <p>30</p>
+            </div>
+            <div class="stat-item">
+                <h3>Offers Made</h3>
+                <p>10</p>
+            </div>
+        </div>
+        <div class="actions">
+            <h3>Quick Actions</h3>
+            <button onclick="window.location.href='./ScheduleInterview.html'">Schedule Interview</button>
+            <button onclick="window.location.href='./ViewCandidates.html'">View Candidates</button>
+            <button onclick="window.location.href='./Reports.html'">Generate Reports</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 [Company Name]. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@company.com">info@company.com</a> | Phone: (123) 456-7890</p>
+            <p>Follow us on:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assests/js/dash.js"></script> <!-- Adjust path as necessary -->
+</body>
+</html>

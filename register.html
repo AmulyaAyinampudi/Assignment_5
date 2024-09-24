@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - Placement Screening System</title>
+    <link rel="stylesheet" href="./assests/css/reg.css"> <!-- Link to your CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>Placement Screening System</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li class="right"><a href="./Login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+                <li class="right"><a href="./Register.html"><i class="fas fa-user-plus"></i>Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="registration-form">
+        <h2>Student Registration</h2>
+
+        <form id="studentRegistrationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="ID">Student Id</label>
+            <input type="text" id="ID" name="ID" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" max="10" required>
+
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <label for="resume">Upload Resume (PDF only):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="successMessage" style="color: green; display: none;">Registration successful! Your details have been submitted.</p>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 [JobSwift]. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@company.com">JobSwift@company.com</a> | Phone: (123) 456-7890</p>
+            <p>Follow us on:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assests/js/reg.js"></script> <!-- Link to your JS file -->
+</body>
+</html>

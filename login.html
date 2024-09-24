@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assests/css/login.css"> <!-- Adjust path as necessary -->
+</head>
+<body>
+    <header>
+        <h1>Placement Screening System</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./dashboard.html">Dashboard</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li class="right"><a href="./Login.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+                <li class="right"><a href="./Register.html"><i class="fas fa-user-plus"></i>Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Form Section -->
+    <div class="login-container">
+        <h2>Welcome Back!</h2>
+        <form id="login-form" action="/submit_login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="./Register.html">Register here</a></p>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 [JobSwift]. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@company.com">JobSwift@company.com</a> | Phone: (123) 456-7890</p>
+            <p>Follow us on:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assests/js/login.js"></script> <!-- Adjust path as necessary -->
+</body>
+</html>
